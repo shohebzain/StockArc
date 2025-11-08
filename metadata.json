@@ -1,0 +1,5 @@
+{
+  "name": "StockArc",
+  "description": "A comprehensive, high-fidelity simulation of a modern stock trading platform, featuring real-time data visualization, advanced charting, simulated order placements, and portfolio management. Built with React and Tailwind CSS for a professional and intuitive user experience.",
+  "requestFramePermissions": []
+}
