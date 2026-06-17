@@ -205,19 +205,6 @@ npm run preview
 
 ---
 
-# 📸 Screenshots
-
-Add screenshots of:
-
-* Dashboard
-* Portfolio
-* Watchlist
-* Stock Details
-* Mutual Funds
-* AI Chat
-* Admin Dashboard
-
----
 
 # 🤝 Contributing
 
