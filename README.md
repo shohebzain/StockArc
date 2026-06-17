@@ -1,114 +1,260 @@
-# 💹 StockArc
+# 📈 StockArc – AI-Powered Stock Trading & Portfolio Management Platform
 
-**StockArc** is a modern, high-fidelity single-page dashboard for tracking stocks, mutual funds, and portfolio activity — built to look and feel like a professional brokerage platform.  
-Developed using **React + TypeScript + Vite**, it offers dynamic charts, trading panels, mutual fund simulations, onboarding flows, and AI-powered insights via the **Gemini API**.
+<p align="center">
 
-🔗 **Live Demo:** [https://navajowhite-eagle-262051.hostingersite.com/](https://navajowhite-eagle-262051.hostingersite.com/)
+![React](https://img.shields.io/badge/React-19-61DAFB?logo=react)
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?logo=typescript)
+![Vite](https://img.shields.io/badge/Vite-646CFF?logo=vite)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-06B6D4?logo=tailwindcss)
+![Gemini AI](https://img.shields.io/badge/Google-Gemini_AI-4285F4?logo=google)
+![License](https://img.shields.io/badge/License-MIT-green)
 
+</p>
 
-## 🚀 Key Features
+A modern, AI-powered stock trading and portfolio management platform built with **React, TypeScript, and Vite**. StockArc provides an intuitive brokerage-style experience with stock analytics, portfolio tracking, mutual fund management, AI-powered financial education, and interactive market insights.
 
-- 📊 **Real-time (client-side) stock charts and comparisons**  
-- 🧾 **Watchlist**, **portfolio overview**, and **order history**
-- 💰 **Mutual funds pages** with SIP calculator and performance visualization
-- 🔔 **Notifications**, **alerts**, and **KYC onboarding flows**
-- 🧠 **AI Learning Center** powered by Google **Gemini API**
-- 🛠️ **Admin dashboard** for monitoring and educational content management
-- 💬 **AI Support Chat** to answer user queries interactively
-
----
-
-## 🧩 Tech Stack
-
-| Layer | Technologies |
-|--------|---------------|
-| **Frontend** | React 19, TypeScript, Vite |
-| **Styling** | Tailwind CSS |
-| **Charts** | Recharts |
-| **AI Integration** | `@google/genai` (Gemini API) |
-| **Hosting** | Hostinger (static web hosting) |
-| **Package Manager** | npm / pnpm / yarn |
+🔗 **Live Demo:**
+https://navajowhite-eagle-262051.hostingersite.com/
 
 ---
 
-## ⚙️ Prerequisites
+# ✨ Features
 
-Before running this project, ensure you have:
+### 📈 Stock Market Dashboard
 
-- **Node.js ≥ 18.x**  
-- **npm**, **pnpm**, or **yarn**  
-- A **Google Gemini API Key** for AI features  
+* Interactive stock market dashboard
+* Live stock charts and comparisons
+* Portfolio performance tracking
+* Watchlist management
+* Order history visualization
+
+### 💹 Mutual Fund Management
+
+* SIP Calculator
+* Mutual fund comparison
+* Fund performance analytics
+* Investment insights
+
+### 🤖 AI Features
+
+* Google Gemini AI integration
+* AI Learning Center
+* AI-powered support chatbot
+* Personalized financial guidance
+* Educational investment content
+
+### 👤 User Experience
+
+* Secure login & registration
+* KYC onboarding workflow
+* Notifications & alerts
+* Responsive UI
+* Modern brokerage-inspired design
+
+### 🛠️ Admin Dashboard
+
+* User monitoring
+* Educational content management
+* Dashboard analytics
+* Platform administration
 
 ---
 
-## 🔑 Environment Setup
+# 🛠 Tech Stack
 
-Create a `.env.local` file in your project root (this file is ignored by Git) and add your Gemini key:
+| Category         | Technologies               |
+| ---------------- | -------------------------- |
+| Frontend         | React 19, TypeScript, Vite |
+| Styling          | Tailwind CSS               |
+| Charts           | Recharts                   |
+| AI               | Google Gemini API          |
+| State Management | React Hooks                |
+| Hosting          | Hostinger                  |
+| Package Manager  | npm / pnpm / Yarn          |
+
+---
+
+# 📂 Project Structure
+
+```text
+StockArc/
+│
+├── public/                 # Static assets
+├── src/
+│   ├── components/         # Reusable UI components
+│   ├── pages/              # Application pages
+│   ├── hooks/              # Custom React hooks
+│   ├── utils/              # Utility functions
+│   ├── assets/             # Images & icons
+│   ├── styles/             # Global styles
+│   ├── App.tsx
+│   └── main.tsx
+│
+├── dist/                   # Production build
+├── package.json
+├── vite.config.ts
+├── tsconfig.json
+└── README.md
+```
+
+---
+
+# 🚀 Getting Started
+
+## Prerequisites
+
+Before running the project, install:
+
+* Node.js (v18 or above)
+* npm / pnpm / Yarn
+* Google Gemini API Key
+
+---
+
+## Installation
+
+Clone the repository
 
 ```bash
-GEMINI_API_KEY=your_gemini_api_key_here
+git clone https://github.com/yourusername/StockArc.git
+```
 
-🧠 Installation & Running Locally
+Navigate to the project
 
-Open PowerShell or terminal in your project root:
+```bash
+cd StockArc
+```
 
-# Install dependencies
+Install dependencies
+
+```bash
 npm install
+```
 
-# Run the development server (default port 3000)
+---
+
+## Environment Variables
+
+Create a `.env.local` file in the project root.
+
+```env
+GEMINI_API_KEY=your_gemini_api_key
+```
+
+---
+
+## Run the Development Server
+
+```bash
 npm run dev
+```
 
-# Build for production
+The application will be available at:
+
+```text
+http://localhost:5173
+```
+
+---
+
+## Build for Production
+
+```bash
 npm run build
+```
 
-# Preview the production build locally
+Preview the production build
+
+```bash
 npm run preview
+```
 
-📂 Project Structure
-StockArc/
-├── dist/                  # Production-ready build (used for deployment)
-├── src/                   # Main source code
-│   ├── components/        # Reusable React components
-│   ├── pages/             # Core page views (Dashboard, Portfolio, etc.)
-│   ├── hooks/             # Custom React hooks
-│   ├── utils/             # Helper functions
-│   └── App.tsx            # Main application entry
-├── public/                # Static assets
-├── index.html             # HTML entry
-├── vite.config.ts         # Vite configuration
-├── tsconfig.json          # TypeScript configuration
-├── package.json
-└── README.md
+---
 
-🧱 Key Components
-Category	Examples
-Dashboard	Dashboard.tsx, AdminDashboard.tsx
-Charts	StockChart.tsx, IndexCharts.tsx
-Stocks	StocksPage.tsx, StockDetail.tsx, StockComparison.tsx
-Orders	OrderPanel.tsx, Orders.tsx, StockOrderHistory.tsx
-Mutual Funds	MutualFunds.tsx, MutualFundDetail.tsx, SIPCalculator.tsx
-Portfolio & Watchlist	Portfolio.tsx, Watchlist.tsx
-Auth & KYC	KycOnboarding.tsx, Login.tsx, Register.tsx
-Support & AI	Support.tsx, SupportChat.tsx
-Alerts & Notifications	SetAlertModal.tsx, Notifications.tsx
+# 📊 Core Modules
 
-🤝 Contributing
+| Module             | Description                             |
+| ------------------ | --------------------------------------- |
+| Dashboard          | Market overview and analytics           |
+| Portfolio          | Holdings, returns, and asset allocation |
+| Watchlist          | Track favorite stocks                   |
+| Stock Details      | Individual stock information            |
+| Stock Comparison   | Compare multiple stocks                 |
+| Orders             | Buy/Sell order management               |
+| Mutual Funds       | SIP calculator and fund analytics       |
+| AI Learning Center | Financial education powered by Gemini   |
+| AI Support Chat    | Interactive AI assistant                |
+| KYC                | User verification workflow              |
+| Notifications      | Price alerts and updates                |
+| Admin Panel        | User and content management             |
 
-Interested in improving StockArc?
+---
 
-Fork the repository
+# 🎯 Future Enhancements
 
-Create a feature branch
+* Real-time stock market APIs
+* Live trading simulation
+* Portfolio risk analysis
+* AI-based buy/sell recommendations
+* Stock prediction using Machine Learning
+* Dark & Light themes
+* Multi-language support
+* Mobile application
+* User authentication with OAuth
+* Cloud deployment
 
-Add or adjust TypeScript types as needed
+---
 
-Test your changes locally
+# 📸 Screenshots
 
-Submit a Pull Request with a clear description
+Add screenshots of:
 
-## 🪪 License
+* Dashboard
+* Portfolio
+* Watchlist
+* Stock Details
+* Mutual Funds
+* AI Chat
+* Admin Dashboard
+
+---
+
+# 🤝 Contributing
+
+Contributions are welcome!
+
+1. Fork the repository
+2. Create a new feature branch
+3. Commit your changes
+4. Push your branch
+5. Open a Pull Request
+
+---
+
+# 📄 License
 
 This project is licensed under the **MIT License**.
-See the [LICENSE](./LICENSE) file for details.
 
+---
 
+# 👨‍💻 Developer
+
+**Mohammad Shoheb**
+
+* AI & Full-Stack Developer
+* React • TypeScript • Python • Java
+* Passionate about AI, FinTech, and Modern Web Development
+
+---
+
+## ⭐ Support
+
+If you found this project useful:
+
+⭐ Star this repository
+
+🍴 Fork the project
+
+💡 Suggest improvements
+
+🚀 Happy Coding!
