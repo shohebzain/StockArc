@@ -1,7 +1,7 @@
 
 
 import type { Stock, ChartDataPoint, User, MutualFund } from './types';
-import { MutualFundRisk } from './types';
+import { MutualFundRisk } from './types'; 
 
 export const ADMIN_USERS_DATA: User[] = [
     { id: 'USR002', name: 'Alice Johnson', email: 'alice@example.com', password: 'password', kycStatus: 'VERIFIED', funds: 1500000, mutualFundHoldings: [], learningProgress: [] },
