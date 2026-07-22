@@ -2,7 +2,7 @@ export enum OrderType {
     BUY = 'BUY',
     SELL = 'SELL',
 }
-
+ 
 export enum OrderCategory {
     MARKET = 'MARKET',
     LIMIT = 'LIMIT',
