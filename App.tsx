@@ -4,7 +4,7 @@ import React, { useState, useCallback, useEffect } from 'react';
 import { ADMIN_USERS_DATA, INITIAL_STOCKS, MUTUAL_FUNDS_DATA } from './constants';
 import type { User, Order, Holding, Stock, View, Page, MutualFundHolding, MutualFund, PriceAlert, Notification as NotificationType } from './types';
 import { OrderType, OrderStatus, OrderCategory } from './types';
-import Navbar from './components/Navbar';
+import Navbar from './components/Navbar'; 
 import Dashboard from './components/Dashboard';
 import Portfolio from './components/Portfolio';
 import Orders from './components/Orders';
